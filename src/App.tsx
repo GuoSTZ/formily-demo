@@ -1,26 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Drawer from './modules/formily/drawer';
+import Linked from './modules/formily/linked';
+import { Tabs } from 'antd';
+import './App.less';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Tabs centered defaultActiveKey='2'>
+      <Tabs.TabPane tab="项目 1" key="1">
+        <Drawer />
+      </Tabs.TabPane>
+      <Tabs.TabPane tab="项目 2" key="2">
+        <Linked />
+      </Tabs.TabPane>
+    </Tabs>
+  )
 }
 
 export default App;

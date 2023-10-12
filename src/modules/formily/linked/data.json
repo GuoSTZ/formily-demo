@@ -1,0 +1,38 @@
+{
+  "form": {
+    "labelCol": 6,
+    "wrapperCol": 10
+  },
+  "schema": {
+    "type": "object",
+    "properties": {
+      "treeSelect1": {
+        "type": "string",
+        "title": "树下拉框1",
+        "x-decorator": "FormItem",
+        "x-component": "AllTreeSelect",
+        "x-component-props": {
+          "placeholder": "请选择数据"
+        }
+      },
+      "treeSelect2": {
+        "type": "number",
+        "title": "树下拉框2",
+        "x-decorator": "FormItem",
+        "x-component": "AllTreeSelect",
+        "x-component-props": {
+          "placeholder": "请选择数据"
+        }
+      },
+      "treeSelect3": {
+        "type": "number",
+        "title": "树下拉框3",
+        "x-decorator": "FormItem",
+        "x-component": "TreeSelect",
+        "x-component-props": {
+          "placeholder": "请选择数据"
+        }
+      }
+    }
+  }
+}
